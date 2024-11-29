@@ -7,54 +7,42 @@ name = "latent_diffusion_policy"
 version = "0.1.0"
 description = "A project for latent diffusion policy research"
 authors = [
-    { name = "Your Name", email = "your.email@example.com" }
+    { name = "Feiyang Wu", email = "feiyangwu@gatech.edu" },
+    { name = "Huishu Xue", email = "hxue37@gatech.edu" },
+    { name = "Yifan Wu", email = "ywu3057@gatech.edu" },
 ]
 license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    'Intended Audience :: Science/Research',
+    'Topic :: Scientific/Engineering :: Artificial Intelligence',
+]
 dependencies = [
     "numpy",
     "torch",
     "scipy",
     "torchvision",
-    "pytorch3d",
-    "opencv-python",
     "cffi",
-    "ipykernel",
-    "matplotlib",
     "zarr",
     "numcodecs",
     "h5py",
     "hydra-core",
     "einops",
     "tqdm",
-    "dill",
-    "scikit-video",
-    "scikit-image",
-    "gym",
     "pymunk",
     "wandb",
-    "threadpoolctl",
-    "shapely",
-    "cython",
     "imageio",
-    "imageio-ffmpeg",
-    "termcolor",
     "tensorboard",
-    "tensorboardx",
-    "psutil",
-    "click",
-    "boto3",
-    "accelerate",
-    "datasets",
     "diffusers",
-    "av",
-    "cmake",
-    "imagecodecs",
-    "ray[default,tune]",
-    "free-mujoco-py",
-    "pygame",
-    "pybullet-svl",
-    "robomimic",
-    "pytorchvideo",
-    "r3m @ https://github.com/facebookresearch/r3m.git",
-    "dm-control",
+    "gymnasium",
+    "gymnasium_robotics",
+    "pytest",
 ]
+
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["latent_diffusion_policy"]
