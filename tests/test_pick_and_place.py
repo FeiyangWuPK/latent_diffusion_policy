@@ -17,7 +17,5 @@ def test_visualize_pick_and_place():
     env.close()
 
 
-
-
 if __name__ == "__main__":
     pytest.main([__file__])
