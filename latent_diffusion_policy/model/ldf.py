@@ -12,7 +12,7 @@ from torchrl.envs import GymEnv
 # from torchrl.collectors import SyncDataCollector
 # from torchrl.data import TensorDict
 
-from utils.wrapper import MultiStepEnvWrapper
+from latent_diffusion_policy.utils.wrapper import MultiStepEnvWrapper
 
 
 class FiLMLayer(nn.Module):
